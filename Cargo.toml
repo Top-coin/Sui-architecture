@@ -1,0 +1,23 @@
+ [workspace]
+members = [
+    "crates/core",
+    "crates/validator",
+    "crates/precheck",
+    "crates/locking",
+    "crates/vm",
+    "crates/effects",
+    "crates/checkpoint",
+    "crates/storage",
+    "crates/network",
+    "crates/aws-nautilus-sdk",
+    "nautilus/shared",
+    "nautilus/host",
+    "nautilus/enclave"
+]
+ resolver = "2"
+
+ [workspace.package]
+ edition = "2021"
+ license = "Apache-2.0"
+ authors = ["Sui Architecture Study Project"]
+

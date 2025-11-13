@@ -1,0 +1,9 @@
+ [package]
+ name = "sui-locking"
+ version = "0.1.0"
+ edition = "2021"
+
+ [dependencies]
+ sui-core = { path = "../core" }
+ parking_lot = "0.12"
+
