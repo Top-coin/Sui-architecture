@@ -1,0 +1,9 @@
+ [package]
+ name = "sui-precheck"
+ version = "0.1.0"
+ edition = "2021"
+
+ [dependencies]
+ sui-core = { path = "../core" }
+ thiserror = "1"
+

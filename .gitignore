@@ -1,0 +1,14 @@
+# Generated Rust build artifacts
+target/
+**/target/
+
+# Rustfmt backups
+**/*.rs.bk
+
+# Node / JS dependencies (if introduced)
+node_modules/
+
+# OS-specific clutter
+.DS_Store
+Thumbs.db
+

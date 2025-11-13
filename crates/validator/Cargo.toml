@@ -1,0 +1,33 @@
+ [package]
+ name = "sui-validator"
+ version = "0.1.0"
+ edition = "2021"
+
+[dependencies]
+sui-core = { path = "../core" }
+sui-precheck = { path = "../precheck" }
+sui-locking = { path = "../locking" }
+sui-vm = { path = "../vm" }
+sui-effects = { path = "../effects" }
+sui-checkpoint = { path = "../checkpoint" }
+sui-storage = { path = "../storage" }
+sui-network = { path = "../network" }
+aws-nautilus-sdk = { path = "../aws-nautilus-sdk" }
+anyhow = "1"
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+async-trait = "0.1"
+reqwest = { version = "0.11", features = ["json"] }
+
+[lib]
+name = "sui_validator"
+path = "src/lib.rs"
+
+[[example]]
+name = "validator_demo"
+path = "examples/validator_demo.rs"
+
+[[example]]
+name = "complete_example"
+path = "examples/complete_example.rs"
+

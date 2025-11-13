@@ -1,0 +1,13 @@
+ [package]
+ name = "nautilus-host"
+ version = "0.1.0"
+ edition = "2021"
+
+[dependencies]
+aws-nautilus-sdk = { path = "../../crates/aws-nautilus-sdk" }
+nautilus-shared = { path = "../shared" }
+nautilus-enclave = { path = "../enclave" }
+serde_json = "1"
+rand = "0.8"
+tokio = { version = "1", features = ["full"] }
+

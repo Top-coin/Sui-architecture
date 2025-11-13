@@ -1,0 +1,9 @@
+ [package]
+ name = "sui-effects"
+ version = "0.1.0"
+ edition = "2021"
+
+[dependencies]
+sui-core = { path = "../core" }
+serde = { version = "1", features = ["derive"] }
+
